@@ -1,0 +1,37 @@
+.sp1, .dtcnkey {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.dtcnkey {
+    
+    background-color: aliceblue;
+    
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+.dtcnkey:hover {
+    background-color: #3362fd;
+    color: white;
+}
+
+.sp1 {
+    margin-top: 20px;
+}
+.cnH, .cnM, .cnL {
+    font-weight: bold;
+}
+
+.cnH {
+    color: red;
+    background-color: bisque;
+}
+.cnM {
+    color: green;
+}
+.cnL {
+    color: blue;
+}
