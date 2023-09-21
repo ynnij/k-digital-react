@@ -7,7 +7,6 @@ const Clock = () => { //파일명과 동일한 이름
             <header className="App-header">
                 <ClockImage />
                 <ClockTime />
-                <MyComN num={1000} />
             </header>
         </div>
     );
