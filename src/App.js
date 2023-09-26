@@ -5,7 +5,7 @@ import MyCom from './03/MyCom';
 import MyDiv from './03/MyDiv';
 import Box from './04/Box';
 import Frcst from './05/Frcst';
-import Taacident from './06/Taacident';
+import Taccident from './06/Taccident';
 function App() {
   return (
     //<Clock />
@@ -14,7 +14,7 @@ function App() {
     //<MyDiv />
     // <Box />
     //<Frcst />
-    <Taacident />
+    <Taccident />
   );
 }
 
