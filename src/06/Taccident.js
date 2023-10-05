@@ -71,9 +71,9 @@ const Taccident = () => {
         <main className="container">
             <article>
                 <Hh1 title="도로교통공단_사고유형별 교통사고 통계" />
-                <TaccidentNav title="사고유형 대분류" c={c1} setSel={setSel1} />
+                <TaccidentNav title="사고유형 대분류" c={c1} sel={sel1} setSel={setSel1} /> {/* 어떤걸 선택했는지 넘겨줘야함 */}
                 {/* c2가 있을 때만 중분류 출력하도록 처리 */}
-                {c2 && <TaccidentNav title="사고유형 중분류" c={c2} setSel={setSel2} />}
+                {c2 && <TaccidentNav title="사고유형 중분류" c={c2} sel={sel2} setSel={setSel2} />}
                 <div className="grid">
                     {divTag}
                 </div>
