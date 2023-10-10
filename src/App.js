@@ -7,16 +7,18 @@ import Box from './04/Box';
 import Frcst from './05/Frcst';
 import Taccident from './06/Taccident';
 import MyRef from './07/MyRef';
+import Gallery from './08/Gallery';
 function App() {
   return (
     // <Clock />
     // <Lotto />
     // <MyCom />
     // <MyDiv />
-    <Box />
+    //<Box />
     // <Frcst />
     //<Taccident />
     //<MyRef />
+    <Gallery />
   );
 }
 
