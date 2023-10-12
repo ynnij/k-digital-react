@@ -1,4 +1,4 @@
-import GalleryCard from "./GalleryCard";
+import GalleryCard from "../common/GalleryCard";
 
 function GalleryItem(props) {
     console.log("galleryItem", props.item);
