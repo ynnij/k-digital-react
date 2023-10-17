@@ -19,8 +19,8 @@ function App() {
     // <Frcst />
     //<Taccident />
     //<MyRef />
-    //<Gallery />
-    <Busan />
+    <Gallery />
+    //<Busan />
   );
 }
 
