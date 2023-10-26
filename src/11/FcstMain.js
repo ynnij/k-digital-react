@@ -30,12 +30,16 @@ const FcstMain = () => {
         //2. getxy에서 sel값과 행정구역코드가 같은 자료 추출
         //3. 상태변수 area, x, y 변경
         let result = getxy.filter((item) => item.행정구역코드 == selRef.current.value)[0];
-        
+
         setArea(result["1단계"]);
         setX(result["격자 X"]);
         setY(result["격자 Y"]);
     }
 
+    const handleFcstClick = (e) => {
+        e.preventDefault();
+        alert("정보를 모두 선택해주세요")
+    }
     //컴포넌트 생성 시 
     useEffect(() => {
         dtRef.current.focus();
@@ -49,7 +53,7 @@ const FcstMain = () => {
     // area, x, y 상태변수가 변경되었을 경우
     useEffect(() => {
         console.log(area, x, y)
-    }, [area,x,y])  //DependencyList에 여러 개 쓸 수 있다.
+    }, [area, x, y])  //DependencyList에 여러 개 쓸 수 있다.
 
     return (
         <div className="mx-10 p-5 shadow-lg	">
@@ -63,12 +67,21 @@ const FcstMain = () => {
                             {optionTag}
                         </select>
                     </div>
-                    <Link to={`/ultra/${dt}/${area}/${x}/${y}`}>
-                        <ButtonBlue caption="초단기예보" />
-                    </Link>
-                    <Link to={`/vilage/${dt}/${area}/${x}/${y}`}>
-                        <ButtonBlue caption="단기예보" />
-                    </Link>
+                    {
+                        (dt === undefined) | (x === undefined)
+                            ? <ButtonBlue caption="초단기예보" handleClick={handleFcstClick} />
+                            : <Link to={`/ultra/${dt}/${area}/${x}/${y}`}>
+                                <ButtonBlue caption="초단기예보" />
+                            </Link>
+                    }
+                    {
+                        (dt === undefined) | (x === undefined)
+                            ? <ButtonBlue caption="단기예보" handleClick={handleFcstClick} />
+                            : <Link to={`/vilage/${dt}/${area}/${x}/${y}`}>
+                                <ButtonBlue caption="단기예보" />
+                            </Link>
+                    }
+
                 </div>
             </form>
         </div>
