@@ -12,8 +12,10 @@ import Busan from './09/Busan';
 import RouteMain from './10/RouteMain';
 //import Fcst from './11/Fcst';
 import Fcst from './12/Fcst';
-import DivMain from './13/DivMain'
-function App() {
+//import DivMain from './13/DivMain'
+import DivMain from './14/DivMain'
+import { RecoilRoot } from 'recoil';
+const App =() =>{
   return (
     // <Clock />
     // <Lotto />
@@ -28,7 +30,9 @@ function App() {
     //<RouteMain/>
     //<Fcst />
     //<Fcst />
-    <DivMain />
+    <RecoilRoot>
+      <DivMain />
+    </RecoilRoot>
   );
 }
 
