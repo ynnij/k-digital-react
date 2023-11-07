@@ -15,6 +15,7 @@ import Fcst from './12/Fcst';
 //import DivMain from './13/DivMain'
 import DivMain from './14/DivMain'
 import { RecoilRoot } from 'recoil';
+import Login from './15/Login';
 const App =() =>{
   return (
     // <Clock />
@@ -30,9 +31,12 @@ const App =() =>{
     //<RouteMain/>
     //<Fcst />
     //<Fcst />
+    /*
     <RecoilRoot>
-      <DivMain />
+     <DivMain />
     </RecoilRoot>
+    */
+    <Login />
   );
 }
 
